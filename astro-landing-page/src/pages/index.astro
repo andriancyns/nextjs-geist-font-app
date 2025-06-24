@@ -1,0 +1,108 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solo Agency Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-black font-sans">
+    <header class="max-w-7xl mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Solo Agency</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#features" class="hover:underline">Features</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+      <section id="hero" class="text-center py-20">
+        <h2 class="text-4xl font-extrabold mb-4">Welcome to Solo Agency</h2>
+        <p class="text-lg max-w-xl mx-auto mb-8">
+          We provide top-notch digital solutions to help your business grow.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition"
+          >Get Started</a
+        >
+      </section>
+
+      <section id="features" class="py-20">
+        <h3 class="text-3xl font-bold mb-8 text-center">Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="border p-6 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Feature One</h4>
+            <p>High quality and reliable services tailored to your needs.</p>
+          </div>
+          <div class="border p-6 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Feature Two</h4>
+            <p>Innovative solutions that drive business success.</p>
+          </div>
+          <div class="border p-6 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Feature Three</h4>
+            <p>Expert team dedicated to delivering excellence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 bg-gray-50 rounded p-6">
+        <h3 class="text-3xl font-bold mb-4">About Us</h3>
+        <p>
+          Solo Agency is a digital agency focused on delivering innovative and
+          effective solutions to help businesses thrive in the digital age.
+        </p>
+      </section>
+
+      <section id="contact" class="py-20">
+        <h3 class="text-3xl font-bold mb-8 text-center">Contact Us</h3>
+        <form
+          class="max-w-xl mx-auto flex flex-col space-y-4"
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="border p-3 rounded"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="border p-3 rounded"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            class="border p-3 rounded h-32"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-black text-white py-3 rounded hover:bg-gray-800 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="text-center py-6 border-t mt-20">
+      &copy; 2024 Solo Agency. All rights reserved.
+    </footer>
+  </body>
+</html>
